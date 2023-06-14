@@ -1,7 +1,7 @@
 package com.example.calculator.service;
 
-import com.example.calculator.model.MathFunctionWithExpression;
-import com.example.calculator.model.Result;
+import com.example.calculator.dto.MathFunctionWithExpression;
+import com.example.calculator.dto.Result;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

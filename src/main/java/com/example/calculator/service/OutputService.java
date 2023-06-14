@@ -1,6 +1,6 @@
 package com.example.calculator.service;
 
-import com.example.calculator.model.Result;
+import com.example.calculator.dto.Result;
 
 public interface OutputService {
 

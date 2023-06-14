@@ -1,6 +1,6 @@
 package com.example.calculator.service;
 
-import com.example.calculator.model.MathFunctionWithExpression;
+import com.example.calculator.dto.MathFunctionWithExpression;
 
 import java.util.List;
 

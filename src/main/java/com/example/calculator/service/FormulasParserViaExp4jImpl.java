@@ -1,7 +1,7 @@
 package com.example.calculator.service;
 
 import com.example.calculator.model.Arguments;
-import com.example.calculator.model.MathFunctionWithExpression;
+import com.example.calculator.dto.MathFunctionWithExpression;
 import lombok.RequiredArgsConstructor;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;

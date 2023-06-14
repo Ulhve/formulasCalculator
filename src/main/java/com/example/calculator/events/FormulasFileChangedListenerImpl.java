@@ -1,6 +1,6 @@
 package com.example.calculator.events;
 
-import com.example.calculator.model.MathFunctionWithExpression;
+import com.example.calculator.dto.MathFunctionWithExpression;
 import com.example.calculator.service.InputService;
 import com.example.calculator.service.FormulasParser;
 import lombok.Getter;
