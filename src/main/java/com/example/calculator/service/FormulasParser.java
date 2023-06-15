@@ -1,11 +1,11 @@
 package com.example.calculator.service;
 
-import com.example.calculator.dto.MathFunctionWithExpression;
+import com.example.calculator.dto.MathFunctionWithFormula;
 
 import java.util.List;
 
 public interface FormulasParser {
 
-    List<MathFunctionWithExpression> parseFormulas(List<String> formulas);
+    List<MathFunctionWithFormula> parseFormulas(String path);
 
 }

@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 @Getter
 @AllArgsConstructor
 public enum Arguments {
-    X("x"),
-    Y("y");
+    ARG_0("arg0"),
+    ARG_1("arg1");
 
     private String name;
 

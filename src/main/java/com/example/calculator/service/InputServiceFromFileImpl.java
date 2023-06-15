@@ -1,6 +1,6 @@
 package com.example.calculator.service;
 
-import com.example.calculator.exceptions.CantReadFromPathException;
+import com.example.calculator.exceptions.CantParseFormulasFromFileException;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -18,7 +18,7 @@ public class InputServiceFromFileImpl implements InputService {
         try(Stream<String> lines = Files.lines(Paths.get(filePath), StandardCharsets.UTF_8)) {
             return lines.toList();
         } catch (IOException e) {
-            throw new CantReadFromPathException(filePath, e);
+            throw new CantParseFormulasFromFileException(filePath, e);
         }
     }
 

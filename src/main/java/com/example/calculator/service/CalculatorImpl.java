@@ -1,6 +1,6 @@
 package com.example.calculator.service;
 
-import com.example.calculator.dto.MathFunctionWithExpression;
+import com.example.calculator.dto.MathFunctionWithFormula;
 import com.example.calculator.dto.Result;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -13,9 +13,9 @@ import java.util.Map;
 public class CalculatorImpl implements Calculator {
 
     @Override
-    public List<Result> calculate(List<MathFunctionWithExpression> formulas, Map<String, Double> arguments){
+    public List<Result> calculate(List<MathFunctionWithFormula> formulas, Map<String, Double> arguments){
         return formulas.stream()
-                .map(expr -> new Result(expr.expression(), arguments, expr.function().calculate(arguments)))
+                .map(expr -> new Result(expr.name(), arguments, expr.formula().calculate(arguments)))
                 .toList();
     }
 

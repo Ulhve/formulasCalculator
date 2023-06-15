@@ -1,6 +1,6 @@
 package com.example.calculator.events;
 
-import com.example.calculator.dto.MathFunctionWithExpression;
+import com.example.calculator.dto.MathFunctionWithFormula;
 import com.example.calculator.service.InputService;
 import com.example.calculator.service.FormulasParser;
 import lombok.Getter;
@@ -16,7 +16,7 @@ import java.util.List;
 @Getter
 public class FormulasFileChangedListenerImpl implements FormulasFileChangedListener {
 
-    private List<MathFunctionWithExpression> currentFormulas = new ArrayList<>();
+    private List<MathFunctionWithFormula> currentFormulas = new ArrayList<>();
 
     private final InputService fileReader;
     private final FormulasParser formulasParser;
@@ -27,6 +27,6 @@ public class FormulasFileChangedListenerImpl implements FormulasFileChangedListe
     }
 
     private void SetFormulasFromFile(String path){
-        currentFormulas = formulasParser.parseFormulas(fileReader.readStrings(path));
+        currentFormulas = formulasParser.parseFormulas(path);
     }
 }
