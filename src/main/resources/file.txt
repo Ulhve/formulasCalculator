@@ -1,0 +1,4 @@
+3 * sin(y) - 2 / (x - 2)
+3log(y)/(x+1)
+2cos(xy)
+3 * (sin(pi) - 2 )/ e

@@ -56,7 +56,7 @@ public class FormulasParserViaReflectionImpl implements FormulasParser {
 
     private Object[] mapArgumentsForFunction(Method method, Map<String, Double> arguments) {
         return Arrays.stream(method.getParameters())
-                .collect(HashMap::new, (m, i)->m.put(i.getName(), arguments.get(i.getName())), Map::putAll)
+                .collect(LinkedHashMap::new, (m, i)->m.put(i.getName(), arguments.get(i.getName())), Map::putAll)
                 .values().toArray(Object[]::new);
     }
 
